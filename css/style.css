@@ -8,12 +8,84 @@
 
 /* Tipografía */
 @font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+  font-family: "Roboto";
+  src:  url("../font/roboto-regular.woff2") format("woff2"),
+        url("../font/roboto-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto_Bold";
+  src:  url("../font/roboto-bold.woff2") format("woff2"),
+        url("../font/roboto-bold.woff") format("woff");
 }
 
 /* ******************************** */
-
 /* Colores */
-
 /* ******************************** */
+:root {
+  /* Mode 1 */
+  /* colors */
+  --blanco: #ffffff;
+  --granate: #591902;
+  --gris-claro: #d9d9d9;
+  --marron-claro: #bf610f;
+  --marron-fuerte: #733907;
+  --negro: #000000;
+  --rojo-flojo: #f23e2e;
+}
+
+/* GENÉRICOS */
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+#container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 20px
+}
+
+.header__banner {
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 1/5;
+
+  & img {
+    width: 100%;
+  }
+}
+
+nav {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boton {
+  padding: 20px 30px;
+  color: var(--blanco);
+  font-size: 18px;
+  border-radius: 10px;
+  background: var(--marron_claro, #BF610F);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+footer {
+  height: 65px;
+  width: 100%;
+  background: var(--marron_fuerte, #733907);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer__redes {
+  display: flex;
+  gap: 30px;
+}
