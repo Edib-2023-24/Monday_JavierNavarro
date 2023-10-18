@@ -38,20 +38,14 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
+  background-color: var(--gris-claro);
 }
 
 #container {
-  display: grid;
   height: 100vh;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  gap: 20px
 }
 
 .header__banner {
-  display: grid;
-  grid-column: 1/4;
-  grid-row: 1/5;
 
   & img {
     width: 100%;
@@ -81,11 +75,47 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
   bottom: 0;
 }
 
 .footer__redes {
   display: flex;
   gap: 30px;
+}
+
+/* INDEX */
+.texto__index {
+  padding: 20px;
+  text-align: justify;
+}
+
+/* CONTACTAR */
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 50px) [textarea]250px [boton]50px [parrafo]100px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.form__text, .form__textarea {
+  border-radius: 15px;
+  padding: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form__boton {
+  display: flex;
+  background-color: var(--granate);
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.parrafo {
+  text-align: justify;
 }

@@ -45,14 +45,16 @@
   <body>
     <div id="container">
       <header class="header__banner">
-        <picture class="banner">
-          <source srcset="
-          img/smartphone/banner.webp    1x,
-          img/smartphone/banner@2x.webp 2x,
-          img/smartphone/banner@3x.webp 3x" 
-          media="(min-width:320px) and (orientation:portrait)"/>
-          <img src="" alt="banner" decoding="async" loading="lazy">
-        </picture>
+        <a href="index.html">
+          <picture class="banner">
+            <source srcset="
+            img/smartphone/banner.webp    1x,
+            img/smartphone/banner@2x.webp 2x,
+            img/smartphone/banner@3x.webp 3x" 
+            media="(min-width:320px) and (orientation:portrait)"/>
+            <img src="" alt="banner" decoding="async" loading="lazy">
+          </picture>
+        </a>
 
         <nav>
           <a href="servicios.html" class="header__servicios boton">Servicios</a>
@@ -63,7 +65,7 @@
       <main>
       </main>
 
-      <footer>
+      <footer style="position:fixed">
         <section class="footer__redes">
           <a href="https://linkedin.com" class="footer__linkedin" target="_blank">
             <img src="svg/LinkedIn.svg" alt="" loading="lazy">
